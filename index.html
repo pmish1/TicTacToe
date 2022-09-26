@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tictactoe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rye&display=swap');
+
+    </style>
+
+    
 </head>
 <body>
-    <h1>hello tictactoe</h1>
+    <div class="container">
+        <h1 class="title">TIC TAC TOE</h1>
+        <section class="turn"><span class='userTurn'>user1</span>'s turn</section>
+        <section class="gameboard">
+            <button class="gridcell" id="0-0"></button>
+            <button class="gridcell" id="0-1"></button>
+            <button class="gridcell" id="0-2"></button>
+            <button class="gridcell" id="1-0"></button>
+            <button class="gridcell" id="1-1"></button>
+            <button class="gridcell" id="1-2"></button>
+            <button class="gridcell" id="2-0"></button>
+            <button class="gridcell" id="2-1"></button>
+            <button class="gridcell" id="2-2"></button>
+        </section>
+        <section class="results"></section>    
+        <section class="score">
+            <h2>Score:</h2>
+            <section class="score-user1">user1</section> 
+            <br>
+            <section class="score-user2">user2</section>
+            
+        </section>
+        <button class="reset">
+            <i class="material-icons">autorenew</i>
+        </button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
